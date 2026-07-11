@@ -3,8 +3,6 @@
 import '@/app/globals.css'
 import Navbar from '@/app/components/Navbar'
 import Footer from '@/app/components/Footer'
-import SubTitle from '@/app/components/SubTitle'
-import Timeline from '@/app/components/TimelineComponent'
 
 export const metadata = {
   title: "Brady's Website - Experience",
