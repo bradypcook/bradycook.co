@@ -47,7 +47,7 @@ export default function RelatedCourseworkNew() {
 
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <p className="text-orange-500 font-semibold uppercase tracking-wider text-sm">
+          <p className="text-[#ef8450] font-semibold uppercase tracking-wider text-sm">
             Coursework
           </p>
           <h2 className="text-5xl font-bold mt-4">Relevant Coursework</h2>
@@ -61,7 +61,7 @@ export default function RelatedCourseworkNew() {
           {institutions.map((inst) => (
             <div
               key={inst.name}
-              className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-orange-500 transition-colors duration-300"
+              className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-[#ef8450] transition-colors duration-300"
             >
               {/* Card header — logo + school name */}
               <div className="flex items-center gap-4 mb-6 pb-6 border-b border-zinc-800">
@@ -81,7 +81,7 @@ export default function RelatedCourseworkNew() {
               <div className="flex flex-col gap-5">
                 {inst.courses.map((course) => (
                   <div key={course.code} className="flex items-baseline gap-3">
-                    <span className="text-orange-500 font-mono text-xs font-semibold shrink-0 w-20">
+                    <span className="text-[#ef8450] font-mono text-xs font-semibold shrink-0 w-20">
                       {course.code}
                     </span>
                     <span className="text-zinc-300 text-sm">{course.title}</span>

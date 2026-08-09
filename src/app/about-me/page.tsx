@@ -2,11 +2,8 @@
 // MDX https://mdxjs.com/playground/
 
 import '@/app/globals.css'
-import Navbar from '@/app/components/Navbar'
-import Footer from '@/app/components/Footer'
-import SubTitle from '@/app/components/SubTitle'
-import Biography from '@/app/components/Biography'
 import Image from 'next/image'
+import Biography from '@/app/components/Biography'
 
 export const metadata = {
   title: "Brady's Website - About Me",
@@ -25,8 +22,6 @@ export const metadata = {
 export default function AboutMePage() {
   return (
     <main className="bg-gray-950 text-white font-sans">
-      <Navbar />
-      <SubTitle title='About Me'/>
       <Biography 
           boxes={[
             {
@@ -71,20 +66,6 @@ export default function AboutMePage() {
             },
           ]}
           />
-          {/*
-          Implement this sometime
-          
-          <button ondblclick="betsonJetson()">Betson Jetson!</button>
-
-            <body>
-                <script>
-                    function betsonJetson() {
-                        alert("Hey There! Bet you didn't expect this popup, did you?");
-                    } 
-                </script>
-
-            </body> */}
-      <Footer />
     </main>
   )
 }

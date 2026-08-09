@@ -46,7 +46,7 @@ export default function Hero() {
             href="/resume.pdf"
             className="px-6 py-3 rounded-lg bg-[#ef8450]"
           >
-            My Resume
+            LinkedIn
           </a>
 
           <a
