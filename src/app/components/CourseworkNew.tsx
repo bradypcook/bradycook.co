@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface Course {
-  code?: string;
+  code: string;
   title: string;
 }
 
@@ -43,7 +43,7 @@ const institutions: Institution[] = [
     courses: [
       { code: "MATA Cyber I & II DE Sem", title: "MATA Cybersecurity Pathway" },
       { code: "MATA CISCO I-IV DE", title: "MATA Cisco Networking Pathway" },
-      { title: "Introduction to Cybersecurity" },
+      { code: "   ", title: "Introduction to Cybersecurity" },
     ],
   },
 ];

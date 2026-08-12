@@ -14,7 +14,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           className="text-[#ef8450] font-semibold mb-4"
         >
-          Hello, I'm
+          Hello, I&apos;m
         </motion.p>
 
         <motion.h1
