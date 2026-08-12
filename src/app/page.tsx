@@ -7,10 +7,10 @@ import Contact from './components/Contact'
 export const metadata = {
   title: "Brady Cook | Cybersecurity at Virginia Tech",
   icons: {
-    icon: '/b_icon_new.ico',
+    icon: '/orange_bc_adobe.ico',
   },
   openGraph: {
-    title: "Brady's Website",
+    title: "Brady Cook | Cybersecurity at Virginia Tech",
     description: "Explore my experiences, projects, skills, and learn more about me.",
     url: 'https://bradypcook.github.io',
     siteName: "Brady's Website",

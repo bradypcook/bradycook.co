@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface Course {
-  code: string;
+  code?: string;
   title: string;
 }
 
@@ -14,28 +14,36 @@ interface Institution {
 const institutions: Institution[] = [
   {
     name: "Virginia Tech",
-    logo: "/imgs/vt.svg",
+    logo: "./third_party_logos/vtlogo.png",
     courses: [
-      { code: "CS 2114", title: "Software Design and Data Structures" },
-      { code: "CS 2104", title: "Problem Solving in Computer Science" },
-      { code: "ECE 2574", title: "Data Structures and Algorithms" },
+      { code: "BIT 3554", title: "Networks, Telecom, and Security" },
+      { code: "BIT 3474", title: "Data Management & Business Analytics in Python" },
+      { code: "BIT 2554", title: "Linux for Business" },
+      { code: "CS 1064", title: "Intro to Programming in Python" },
     ],
   },
   {
     name: "Northern Virginia Community College (Dual Enrollment)",
-    logo: "/imgs/cpcc.svg",
+    logo: "./third_party_logos/nvcclogo.png",
     courses: [
-      { code: "CSC 134", title: "C# Programming" },
-      { code: "NET 125", title: "Network Administration" },
-      { code: "SEC 110", title: "Security Concepts" },
+      { code: "ITN 260", title: "Network Security Basics" },
+      { code: "ITN 101", title: "Intro to Network Concepts" },
+      { code: "ITN 107", title: "PC Hardware & Troubleshooting" },
+      { code: "ITN 106", title: "Microcomputer Operating Systems" },
+      { code: "ITE 152", title: "Intro to Digital & Information Systems" },
+      { code: "ITN 157", title: "WAN Tech - CISCO" },
+      { code: "ITN 156", title: "Enterprise Networking & Security Automation" },
+      { code: "ITN 155", title: "Switching, Wireless, and WAN" },
+      { code: "ITN 154", title: "Network Fundamentals: Cisco" },
     ],
   },
   {
     name: "Riverside High School & Academies of Loudoun",
-    logo: "/imgs/highschool.svg",
+    logo: "./third_party_logos/riverside+academieslogo.png",
     courses: [
-      { code: "CS 101", title: "Intro to Computer Science" },
-      { code: "CYBER 201", title: "Cybersecurity Fundamentals" },
+      { code: "MATA Cyber I & II DE Sem", title: "MATA Cybersecurity Pathway" },
+      { code: "MATA CISCO I-IV DE", title: "MATA Cisco Networking Pathway" },
+      { title: "Introduction to Cybersecurity" },
     ],
   },
 ];
@@ -65,13 +73,13 @@ export default function RelatedCourseworkNew() {
             >
               {/* Card header — logo + school name */}
               <div className="flex items-center gap-4 mb-6 pb-6 border-b border-zinc-800">
-                <div className="shrink-0 w-12 h-12 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center overflow-hidden">
+                <div className="relative shrink-0 w-12 h-12 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center overflow-hidden">
                   <Image
                     src={inst.logo}
                     alt={inst.name}
                     width={28}
                     height={28}
-                    className="object-contain"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <h3 className="text-xl font-bold">{inst.name}</h3>

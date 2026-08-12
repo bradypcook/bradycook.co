@@ -13,46 +13,48 @@ interface Project {
   year: string;
   description: string;
   skills: Skill[];
-  href?: string; // optional link to repo / live site
+  href?: string; // optional link to repo or site
 }
 
 const projects: Project[] = [
   {
     num: "01",
-    title: "HawkNode Security Network",
-    year: "2024",
-    description:
-      "Built a fully segmented home lab with VLANs, a pfSense firewall, and Proxmox-hosted VMs for hands-on networking, security monitoring, and server administration.",
-    skills: [
-      { name: "Proxmox",  icon: "proxmox"  },
-      { name: "pfSense",  icon: "pfsense"  },
-      { name: "Linux",    icon: "linux"    },
-    ],
-  },
-  {
-    num: "02",
     title: "BIT Club Website",
     year: "2025",
     description:
-      "Personal portfolio built with Next.js and Tailwind CSS, deployed on GitHub Pages. Designed to be fast, accessible, and a direct reflection of my work.",
+      "During the 2025-2026 school year, I was the Web Design Chair for The Business Information Technology Club at Virginia Tech. While I was the Web Design Chair, I helped redesign the site to implement Next.js, a newer React-based framework. I also assisted with acquiring the domain name and configuring the DNS records for the site, as well as updating the site and conducing site maintenance (as necessary). The link serves as a snapshot of the website from the 2025-2026 school year.",
     skills: [
       { name: "Next.js",    icon: "nextdotjs"  },
       { name: "TypeScript", icon: "typescript" },
       { name: "Tailwind",   icon: "tailwindcss"},
+      { name: "Node.js",   icon: "nodedotjs" },
     ],
-    href: "https://github.com/bradypcook/bradypcook.github.io",
+    href: "https://bradypcook.github.io/bitclubvt2025-2026/",
+  },
+  {
+    num: "02",
+    title: "HawkNode Security Network",
+    year: "2024",
+    description:
+      "Built an enterprise-level network while integrating CCNA and CCNP level design concepts as well as various web and related services. You can read more about it on the attached GitHub repository link.",
+    skills: [
+      { name: "Cisco IOS",  icon: "cisco"  },
+      { name: "DNS Services", icon: "nextdns" },
+      { name: "Email Services", icon: "gmail" },
+    ],
+    href: "https://github.com/bradypcook/HawkNodeSecurity_Network",
   },
   {
     num: "03",
     title: "EmailSort",
     year: "2023",
     description:
-      "Self-managed web hosting operation serving multiple clients — automated backups, uptime monitoring, DNS management, and a lightweight billing dashboard.",
+      "Created an email sorter that automatically removes junk emails from my inbox using Python and GoogleOAuth. More information can be found on the GitHub repository.",
     skills: [
-      { name: "Linux",  icon: "linux"  },
-      { name: "Nginx",  icon: "nginx"  },
-      { name: "Bash",   icon: "gnubash"},
+      { name: "Python",  icon: "linux"  },
+      { name: "Google OAuth",  icon: "googlecloud"  },
     ],
+    href: "https://github.com/bradypcook/EmailSort",
   },
 ];
 
@@ -137,7 +139,7 @@ export default function FeaturedProjects() {
         {/* Section header */}
         <div className="mb-16 text-center">
           <p className="text-[#ef8450] font-semibold uppercase tracking-wider text-sm">
-            Projects
+            Featured Projects
           </p>
           <h2 className="text-5xl font-bold mt-4">Things I&apos;ve Built</h2>
           <p className="text-zinc-400 mt-6 max-w-2xl mx-auto leading-relaxed">

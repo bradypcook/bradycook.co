@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,7 +9,6 @@ import {
   faSpotify,
   faStrava,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const certifications = [
   {
@@ -42,7 +43,6 @@ const socials = [
     label: "Handshake",
     type: "handshake" as const,
   },
-  { href: "mailto:bradyc05@vt.edu",                      label: "Email",     type: "email"     as const },
   { href: "https://github.com/bradypcook",               label: "GitHub",    type: "github"    as const },
   { href: "https://linkedin.com/in/bradypcook",          label: "LinkedIn",  type: "linkedin"  as const },
   { href: "https://www.instagram.com/brady.cook.7/",     label: "Instagram", type: "instagram" as const },
@@ -51,7 +51,6 @@ const socials = [
 ];
 
 const iconClass: Record<string, string> = {
-  email:     "hover:text-zinc-400",
   github:    "hover:text-zinc-400",
   linkedin:  "hover:text-[#4682B4]",
   instagram: "hover:text-pink-400",
@@ -60,7 +59,6 @@ const iconClass: Record<string, string> = {
 };
 
 const faIcons = {
-  email:     faEnvelope,
   github:    faGithub,
   linkedin:  faLinkedin,
   instagram: faInstagram,
@@ -94,14 +92,13 @@ export default function About() {
 
           {/* Bio */}
           <div className="text-center space-y-3">
-            <h3 className="text-2xl font-bold">Hello again!</h3>
+            <h3 className="text-2xl font-bold">Hi there!</h3>
             <p className="text-zinc-400 leading-relaxed max-w-xl">
               As you may know, I&apos;m Brady (the designer of this site). I&apos;m currently
               a student at Virginia Tech (Go Hokies!) studying Cybersecurity, focusing on a
-              career in computer networking — but coding and doing other tech stuff in the
-              meantime. In my spare time, I like to play video games, exercise, and learn
-              new things. Feel free to check out my certifications &amp; socials below, or
-              send me an email!
+              career in computer networking and doing other tech stuff in the
+              meantime. Outside of school and work, I like to play video games, exercise, and learn
+              new things. Feel free to check out my certifications &amp; or connect with me on my socials!
             </p>
           </div>
 

@@ -11,11 +11,11 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     company: "XPO",
-    role: "Network Engineer Intern",
-    years: "2026",
+    role: "Network Analyst Intern",
+    years: " May 2026 - August 2026",
     description:
       "Supporting enterprise networking operations and infrastructure initiatives. Assisting with network monitoring, troubleshooting, and operational improvements within a large-scale transportation environment.",
-    logo: "/imgs/xpo.svg",
+    logo: "/third_party_logos/xpologo.png",
   },
   {
     company: "Aramark",
@@ -23,7 +23,7 @@ const experiences: ExperienceItem[] = [
     years: "August 2025 – May 2026",
     description:
       "As an IT intern for Aramark, I made sure our POS systems operated for over 45,000-50,000+ customers during Virginia Tech Athletics gamedays.",
-    logo: "/third_party_logos/aramark_logo_transparent.png",
+    logo: "/third_party_logos/aramark_logo.png",
   },
   {
     company: "Virginia Tech BIT Club",
@@ -38,7 +38,7 @@ const experiences: ExperienceItem[] = [
     role: "CTF Developer",
     years: "October 2024 – April 2025",
     description:
-      "I have helped out with George Mason University's CS Club annual hackathon, called HackFax. More specifically, I helped out in the Networking portion CTF (Capture the Flag) competition where users solve challenges in order to earn points. The video below explains the challenges in the CTF and helps highlight my contributions:",
+      "I have helped out with George Mason University's CS Club annual hackathon, called HackFax. More specifically, I helped out in the Networking portion CTF (Capture the Flag) competition where users solve challenges in order to earn points. ",
     // https://www.youtube.com/embed/5FIlNuWnZ7Q
     logo: "/third_party_logos/hackfax_logo.png",
   },
@@ -48,7 +48,6 @@ const experiences: ExperienceItem[] = [
     years: "February 2023 – August 2025",
     description:
       "I completed an Internship for Halvex Hosting where I created & updated webpages (like I'm doing with this one!).",
-    // https://www.youtube.com/embed/5FIlNuWnZ7Q
     logo: "/third_party_logos/halvex_logo.png",
   },
   {
@@ -66,6 +65,14 @@ const experiences: ExperienceItem[] = [
     description:
       "As a part of my Cybersecurity class, students participate in the Air Force Association's Cyberpatriot Competition, where teams work together to harden virtual machines and secure networks. During the two years that my team participated, we reached the Gold and Platinum tiers (which are the top 66% and 33%, respectively). ",
     logo: "/third_party_logos/cyberpatriot_logo.png",
+  },
+  {
+    company: "Boy Scouts Troop 1158",
+    role: "Eagle Scout",
+    years: "August 2022 – December 2024",
+    description:
+      "While a member of Troop 1158, I served multiple leadership positions ranging from Troop Historian to Senior Patrol Leader on the Patrol Leaders Council (the troops governing body). During my time, I also served as a mentor to younger scouts and taught them skills such as First Aid and conflict resolution, and I was eventually was awarded the rank of Eagle Scout on July 23rd, 2022, becoming Troop 1158’s 105th Eagle Scout. I was subsequently awarded the Eagle Scout Bronze Palm on August 16th, 2022, for completing 5 merit bages beyond the 21 required to become an Eagle Scout.",
+    logo: "/third_party_logos/scoutinglogo.png",
   },
 ];
 
@@ -106,13 +113,13 @@ export default function ExperienceNew() {
                   {/* ── MOBILE layout (stacked, logo left) ── */}
                   <div className="flex md:hidden items-start gap-5 w-full">
                     {/* Logo bubble */}
-                    <div className="shrink-0 w-12 h-12 rounded-full bg-zinc-900 border border-[#ef8450] flex items-center justify-center overflow-hidden">
+                    <div className=" relative shrink-0 w-12 h-12 rounded-full bg-zinc-900 border border-[#ef8450] flex items-center justify-center overflow-hidden">
                       <Image
                         src={exp.logo}
                         alt={exp.company}
                         width={28}
                         height={28}
-                        className="object-contain"
+                        className="object-cover w-full h-full"
                       />
                     </div>
                     {/* Card */}
@@ -159,13 +166,13 @@ export default function ExperienceNew() {
 
                     {/* Center — logo bubble sitting on the line */}
                     <div className="flex justify-center">
-                      <div className="w-14 h-14 rounded-full bg-zinc-900 border-2 border-[#ef8450] flex items-center justify-center overflow-hidden z-10 shadow-lg shadow-black/40">
+                      <div className=" relative w-14 h-14 rounded-full bg-zinc-900 border-2 border-[#ef8450] flex items-center justify-center overflow-hidden z-10 shadow-lg shadow-black/40">
                         <Image
                           src={exp.logo}
                           alt={exp.company}
                           width={32}
                           height={32}
-                          className="object-contain"
+                          className="object-cover w-full h-full"
                         />
                       </div>
                     </div>
