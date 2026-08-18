@@ -1,6 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 
 export default function Hero() {
   return (
@@ -43,16 +46,22 @@ export default function Hero() {
 
         <div className="flex gap-4 mt-8">
           <a
-            href="/resume.pdf"
-            className="px-6 py-3 rounded-lg bg-[#ef8450]"
+            href="https://linkedin.com/in/bradypcook"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 rounded-lg bg-[#ef8450]"
           >
+            <FontAwesomeIcon icon={faLinkedin} />
             LinkedIn
           </a>
 
           <a
             href="https://github.com/bradypcook"
-            className="px-6 py-3 rounded-lg border border-zinc-700"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 rounded-lg border border-zinc-700"
           >
+            <FontAwesomeIcon icon={faGithub} />
             GitHub Profile
           </a>
         </div>

@@ -16,6 +16,7 @@ const institutions: Institution[] = [
     name: "Virginia Tech",
     logo: "./third_party_logos/vtlogo.png",
     courses: [
+      { code: "BIT 4964", title: "Cybersecurity Field Study" },
       { code: "BIT 3554", title: "Networks, Telecom, and Security" },
       { code: "BIT 3474", title: "Data Management & Business Analytics in Python" },
       { code: "BIT 2554", title: "Linux for Business" },
